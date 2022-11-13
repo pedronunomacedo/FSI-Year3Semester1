@@ -1,0 +1,42 @@
+Instructions to run the SEEDS Labs on cloud using Microsoft Azure
+
+1 - Start the cloud virtual machine in the Microsoft Azure (online).
+
+2 - Open the terminal in the folder where the "SEED-Labs_key.pem" is located.
+
+3 - Run the command "chmod 400 SEED-Labs_key.pem".
+
+4 - Next, run the command "ssh -i SEED-Labs_key.pem seed@<public port>". In my case, the public port is 51.145.142.119, but you can find it in the VM definitions (on your virtual machines in Microsoft Azure).
+
+5 - Run the command "cd /mnt/qsfileshare" on the Linux terminal (terminal opened in the previous step).
+
+6 - Run the commmand "cd seed-labs/" to go to the SEED Labs directory.
+
+7 - And there you have the files.
+
+How to put a folder in the Linux Microsoft Azure VM?
+
+1 - Run the following command in the Mac terminal "open smb://ssedlabs:CIcMev1KoK8o2gdXluc%2BAWo%2FhV7qhuBBel5rrxjNYLcqw6Z5voU%2BMPkErkiHeXRzruckoVBt%2BKUi%2BAStJLgk9A%3D%3D@ssedlabs.file.core.windows.net/qsfileshare".
+
+2 - If it takes too long to connect to the server, it may be the internet connection (in my case, the university internet connection was too slow). Connect to your personal hotspot.
+
+3 - After doing the step 2 (if its successful), it will open the finder app in the VM shared folder.
+
+4 - And there you can put your files and access them in the Linux VM.
+
+NOTE: It can be really slow to copy files/folders to the shared folder. Just wait!
+
+
+If the shared folder is not appearing on the terminal, do this:
+
+1 - In the ubuntu terminal (in the Microsoft Azure VM), do the command "cd /mnt".
+
+2 - Go to the shared folder on Microsoft Azure, click on the folder you want to share. In the top menu, click on Connect.
+
+3 - Then, in the right-side menu that will appear, click on Linux.
+
+4 - Click on "Show Script".
+
+5 - Copy the script and paste it on the Ubuntu terminal (on the VM Azure terminal).
+
+6 - And then try to enter the shared folder again!
