@@ -4,3 +4,6 @@
 [submodule "Project/src"]
 	path = Project/src
 	url = git@github.com:pedronunomacedo/FSI-Project.git
+[submodule "Project"]
+	path = Project
+	url = git@github.com:pedronunomacedo/FSI-Project.git
