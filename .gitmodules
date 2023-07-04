@@ -1,3 +1,6 @@
 [submodule "Project/l12g02"]
 	path = Project/l12g02
 	url = git@git.fe.up.pt:fsi/fsi2223/l12g02.git
+[submodule "Project/src"]
+	path = Project/src
+	url = git@github.com:pedronunomacedo/FSI-Project.git
